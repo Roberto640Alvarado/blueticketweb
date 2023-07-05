@@ -10,7 +10,7 @@ const API = axios.create({
 });
 
 const EventService = {
-    getAllEvents: async(token, page = 0, size = 9, title = '')=>{
+    getAllEvents: async(token, page = 0, size = 6, title = '')=>{
         try {
             const response = await API.get('/public/home', {
                 params: { page, size, title },

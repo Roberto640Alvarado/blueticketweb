@@ -39,7 +39,7 @@ const Home = () => {
     const response = await EventService.getAllEvents(
       token,
       currentPage,
-      3, //De momento se deja en 3 para prueba, luego se cambia a 9
+      6, //De momento se deja en 3 para prueba, luego se cambia a 9
       title
     );
     console.log(response.content);
